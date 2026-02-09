@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+    /* Cores Principais */
+    --laranja-principal: #F57C00;
+    --azul-principal: #1976D2;
+    --branco: #FFFFFF;
+    
+    /* Gradientes */
+    --gradiente-azul: linear-gradient(135deg, #1976D2, #42A5F5);
+    --gradiente-laranja: linear-gradient(135deg, #F57C00, #FFB74D);
+    --gradiente-misto: linear-gradient(135deg, #1976D2, #F57C00);
+    
+    /* Tons Complementares */
+    --azul-escuro: #0D47A1;
+    --azul-claro: #90CAF9;
+    --laranja-escuro: #E65100;
+    --laranja-claro: #FFCC80;
+    
+    /* Neutros Sofisticados */
+    --cinza-1: #263238;
+    --cinza-2: #546E7A;
+    --cinza-3: #B0BEC5;
+    --cinza-4: #ECEFF1;
+    
+    /* Cores de Interface */
+    --fundo: #FAFAFA;
+    --card: #FFFFFF;
+    --borda: #E0E0E0;
+}
+
+body {
+    background-color: var(--fundo);
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+button { cursor: pointer; }
+
+footer {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 500;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+a { text-decoration: none; }
+
+main {
+    width: 100%;
+    max-width: 1300px;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: var(--gradiente-azul);
+    padding: 7px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 50%;
+}
+
+.historico-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    overflow: hidden;
+    margin: 20px;
+    background-color: var(--azul-claro);
+    border-radius: 8px;
+}
+
+.table-body, .table-head {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.table-head {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+.table-head th { width: 300px; }
+.table-body td { width: 300px; }
+
+#colegio h1 {
+    color: var(--branco);
+    margin-right: 180px;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#logo img{
+    border-radius: 50px;
+    width: 40px;
+    margin-left: 20px;
+}
+
+#profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--branco);
+    margin: 10px;
+}

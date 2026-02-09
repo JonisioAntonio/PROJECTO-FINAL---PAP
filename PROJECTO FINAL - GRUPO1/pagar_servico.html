@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/pagar_servico.css">
+    <title>Carteira Virtual</title>
+</head>
+<body>
+
+    <section class="container">
+        <h2 id="title">Pagar Serviço</h2>
+
+        <label for="servico">Selecionar Serviço: </label>
+        <select name="servico" id="servico">
+            <option value="propina">Propina(mensal)</option>
+            <option value="transporte">Transporte(mensal)</option>
+        </select>
+        <label for="servico">Selecionar Aluno: </label>
+        <select name="aluno-select" id="aluno-select">
+            <option value="aluno">Jonísio António</option>
+            <option value="aluno">Josemar Saraiva</option>
+            <option value="aluno">Albertino Ningui</option>
+        </select>
+
+        <div class="metodo-pagamento">
+            <label for="carteira">Carteira Digital</label>
+            <input type="radio" id="carteira" name="pagamento" value="carteira">
+            <label for="express">Multicaixa Express</label>
+            <input type="radio" id="express" name="pagamento" value="express">
+            <label for="transferencia">Transferência</label>
+            <input type="radio" id="transferencia" name="pagamento" value="transferencia">
+        </div>
+        
+        <button>Confirmar pagamento</button>
+    </section>
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+    /* Cores Principais */
+    --laranja-principal: #F57C00;
+    --azul-principal: #1976D2;
+    --branco: #FFFFFF;
+    
+    /* Gradientes */
+    --gradiente-azul: linear-gradient(135deg, #1976D2, #42A5F5);
+    --gradiente-laranja: linear-gradient(135deg, #F57C00, #FFB74D);
+    --gradiente-misto: linear-gradient(135deg, #1976D2, #F57C00);
+    
+    /* Tons Complementares */
+    --azul-escuro: #0D47A1;
+    --azul-claro: #90CAF9;
+    --laranja-escuro: #E65100;
+    --laranja-claro: #FFCC80;
+    
+    /* Neutros Sofisticados */
+    --cinza-1: #263238;
+    --cinza-2: #546E7A;
+    --cinza-3: #B0BEC5;
+    --cinza-4: #ECEFF1;
+    
+    /* Cores de Interface */
+    --fundo: #FAFAFA;
+    --card: #FFFFFF;
+    --borda: #E0E0E0;
+}
+
+body {
+    background-image: var(--gradiente-azul);
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+a { text-decoration: none; }
+
+main {max-width: 1200px;}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    gap: 10px;
+    background-color: var(--fundo);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container label {
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.container select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #e9e9ee;
+}
+
+.container option {
+    padding: 10px;
+}
+
+.metodo-pagamento {
+    display: flex;
+    gap: 10px;
+}
+
+.metodo-pagamento label {
+    background-color: var(--azul-principal);
+    padding: 5px;
+    border-radius: 8px;
+    color: var(--fundo);
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+#title {
+    border-bottom: 1px solid var(--cinza-3);
+    margin: 10px;
+    color: var(--azul-escuro);
+}
+
+#colegio h1 {
+    color: var(--azul-escuro);
+    margin-right: 300px;
+    font-size: 1.8rem;
+    white-space: nowrap;
+}
+
+#logo img{
+    border-radius: 50px;
+    width: 40px;
+    margin-right: 10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/definiçoesgerais.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/add_aluno.css">
+    <title>Carteira Virtual</title>
+</head>
+<body>
+    <h1>Adicionar Dados</h1>
+    <div class="container">
+        <h3>Encarregado</h3>
+        <label for="nome-encarregado">Nome Encarregado</label>
+        <input type="text" id="nome-encarregado" required>
+        <label for="senha">Palavra-Passe</label>
+        <input type="password" id="senha" required>
+
+        <h3>Aluno</h3>
+        <label for="nome-aluno">Nome Aluno</label>
+        <input type="text" id="nome-aluno" required>
+        <label for="matricula">Número de Matrícula</label>
+        <input type="text" id="matricula" required>
+
+        <label for="classe">Classe</label>
+        <select name="classe" id="classe" required>
+            <option value="">10</option>
+            <option value="">11</option>
+            <option value="">12</option>
+            <option value="">13</option>
+        </select>
+
+        <label for="curso">Curso</label>
+        <select name="curso" id="curso" required>
+            <option value="">Não possui</option>
+            <option value="">Informática</option>
+            <option value="">Contabilidade</option>
+            <option value="">Físicas e Biológicas</option>
+            <option value="">Económicas e Jurídicas</option>
+        </select>
+
+        <div class="button-container">
+            <button id="save-btn">Salvar</button>
+            <button id="cancel-btn">Cancelar</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+    /* Cores Principais */
+    --laranja-principal: #F57C00;
+    --azul-principal: #1976D2;
+    --branco: #FFFFFF;
+    
+    /* Gradientes */
+    --gradiente-azul: linear-gradient(135deg, #1976D2, #42A5F5);
+    --gradiente-laranja: linear-gradient(135deg, #F57C00, #FFB74D);
+    --gradiente-misto: linear-gradient(135deg, #1976D2, #F57C00);
+    
+    /* Tons Complementares */
+    --azul-escuro: #0D47A1;
+    --azul-claro: #90CAF9;
+    --laranja-escuro: #E65100;
+    --laranja-claro: #FFCC80;
+    
+    /* Neutros Sofisticados */
+    --cinza-1: #263238;
+    --cinza-2: #546E7A;
+    --cinza-3: #B0BEC5;
+    --cinza-4: #ECEFF1;
+    
+    /* Cores de Interface */
+    --fundo: #FAFAFA;
+    --card: #FFFFFF;
+    --borda: #E0E0E0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cinza-4);
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+button { cursor: pointer; }
+
+footer {
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 500;
+    width: 100%;
+    height: 100vh;
+}
+
+ul, li {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 6px;
+    font-weight: bold;
+}
+
+a { text-decoration: none; }
+
+main {
+    width: 100%;
+    max-width: 1300px;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--azul-escuro);
+    padding: 7px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 50%;
+}
+
+.servicos-1 button, .servicos-2 button {
+    border: none;
+    outline: none;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--azul-principal);
+    color: var(--branco);
+    width: 200px;
+    height: 50px;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.servicos-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px;
+}
+
+.recentes {
+    width: 100%;
+    background-color: var(--branco);
+    box-shadow: 0px 5px 8px var(--cinza-3);
+    max-width: 1300px;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.table-container {
+    width: 100%;
+    text-align: center;
+}
+
+.table-head th {
+    color: var(--azul-escuro);
+    font-weight: 600;
+}
+
+.table-body td {
+    color: var(--cinza-1);
+}
+
+.saldo-disponivel {
+    background-image: var(--gradiente-azul);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0px 2px 9px var(--azul-claro);
+}
+
+#ultima-atuali {
+    border-bottom: 1px var(--borda) solid;
+    font-weight: 600;
+    margin: 10px;
+    color: var(--azul-escuro);
+}
+
+#saldo {
+    color: var(--branco);
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#saldo-parag {
+    color: var(--branco);
+    margin: 8px;
+    font-weight: 600;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+#colegio h1 {
+    color: var(--branco);
+    margin-right: 180px;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    text-align: center;
+}
+
+#logo img{
+    border-radius: 50px;
+    width: 40px;
+    margin-left: 20px;
+}
+
+#profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: var(--branco);
+    margin: 10px;
+}
